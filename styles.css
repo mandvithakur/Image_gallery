@@ -1,0 +1,126 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(51,61,112,1) 59%, rgba(89,6,79,1) 98%, rgba(42,2,37,1) 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gallery-button {
+    background-color: transparent;
+    border: none ;
+    color: white;
+    padding: 15px 30px;
+    font-size: 80px;
+    font-family: "Your Desired Font", Brush Script MT ;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.gallery-button:hover {
+    background-color: 0.3s, color 0.4s;
+    color: #282e47;
+}
+
+.gallery-page {
+    background: linear-gradient(to bottom, #20232a, #222831, #242a38, #262c40, #282e47);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.gallery {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(51,61,112,1) 59%, rgba(89,6,79,1) 98%, rgba(42,2,37,1) 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 5px;
+    flex: 1 0 calc(33.33% - 25px); /* Adjust the width and margin as needed */
+    max-width: calc(33.33% - 25px); /* Adjust the width and margin as needed */
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}

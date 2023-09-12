@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <button class="gallery-button">Photo Gallery</button>
+    </div>
+
+    <!-- Gallery Page -->
+    <div class="gallery-page">
+        
+        <div class="gallery">
+            <!-- Gallery images will be populated here -->
+        </div>
+        <div id="modal" class="modal">
+            <span class="close-modal" tabindex="0" role="button" aria-label="Close">&times;</span>
+            <img class="modal-content" id="modal-image" alt="Gallery Image" loading="lazy">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
